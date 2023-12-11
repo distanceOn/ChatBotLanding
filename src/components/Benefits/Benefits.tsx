@@ -32,7 +32,7 @@ export const Benefits = () => {
         </S.IconContainer>
         <S.CustomDivider/>
         <S.TextContainer>
-          <S.Title>{item.title}</S.Title>
+          <S.Title level={2}>{item.title}</S.Title>
           <S.Desc>{item.desc}</S.Desc>
         </S.TextContainer>
       </S.Item>
