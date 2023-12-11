@@ -27,7 +27,7 @@ export const App = styled(Layout)`
 		linear-gradient(336deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 70.71%);
 
 	width: 100vw;
-	height: 100vh;
+	height: fit-content;
 
 	background-size: 180% 180%;
 	animation: ${gradient} 16s ease infinite;
