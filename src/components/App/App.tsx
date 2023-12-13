@@ -7,6 +7,7 @@ import { Team } from "../Team/Team";
 import * as S from "./style";
 
 export const App = () => {
+	window.scroll
 	return (
 		<S.App>
 			<Header />

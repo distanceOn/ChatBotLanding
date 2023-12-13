@@ -47,7 +47,7 @@ const members = [
 ];
 export const Team = () => {
 	return (
-		<S.Container>
+		<S.Container id="team">
 			<S.MailTitle>Наша команда</S.MailTitle>
 			<S.MembersContainer>
 				{members.map(({ photo, name, surname, tg, role }, i) => {
