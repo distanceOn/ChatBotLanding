@@ -2,7 +2,7 @@ import { Col } from "antd";
 import * as S from "./style.ts";
 export const Main = () => {
 	return (
-		<S.Container>
+		<S.Container id="about">
 			<Col span={2} />
 			<S.TextContainer span={11}>
 				<S.MailTitle>CHATBOT FDSAFDJ DSADAS</S.MailTitle>

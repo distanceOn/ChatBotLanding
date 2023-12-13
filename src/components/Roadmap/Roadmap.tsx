@@ -5,7 +5,7 @@ export const Roadmap = () => {
 
  
   return (
-    <S.Container>
+    <S.Container id='map'>
       <S.Titles>
         <S.LeftTitle>
           ROAD

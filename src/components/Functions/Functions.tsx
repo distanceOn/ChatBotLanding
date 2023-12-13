@@ -19,7 +19,7 @@ export const Functions = () => {
     }
   ]
   return (
-    <S.Container>
+    <S.Container id='functions'>
       <S.TextContainer span={12} >
           <S.Title level={2}>Функционал выдфвол</S.Title>
           <S.CustomDivider/>
