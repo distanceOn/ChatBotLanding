@@ -38,10 +38,21 @@ border-radius: 50%;
 `
 
 export const MailTitle = styled(Title)`
-
+line-height: 1.5 !important;
 color: #73F9CF !important;
+cursor: default;
 `
 export const  SubTitle = styled(Title)`
 color: #fff !important;
 margin: 0 !important;
+`
+
+export const Name = styled.strong`
+  color: #fff;
+  	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background: -webkit-linear-gradient(90deg, #000000, #4d1569);
+	background: linear-gradient(334deg, #fe095f, #2b876c, #fe095f, #000000),
+		linear-gradient(334deg, #2b876c, #2b876c, red, #000000);
+    border-radius: 10px;
+    padding: 1px 15px;
 `

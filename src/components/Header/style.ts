@@ -52,6 +52,7 @@ export const Menu = styled(Anchor)`
 		}
 		&:hover {
 			color: #73f9cf !important; /* Цвет при наведении */
+			
 
 			&::after {
 				border-bottom-color: #73f9cf !important;
