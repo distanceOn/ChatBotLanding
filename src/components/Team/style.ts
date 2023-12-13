@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Title } from "../Benefits/style";
 import Link from "antd/es/typography/Link";
-import { Typography } from "antd";
+import { Button, Typography } from "antd";
 
 export const ColumnBox = styled.div`
 	display: flex;
@@ -11,6 +11,7 @@ export const ColumnBox = styled.div`
 	& svg {
 		fill: white;
 	}
+    margin: 0;
 `;
 export const Container = styled(ColumnBox)`
 	gap: 12vh;
@@ -57,4 +58,26 @@ export const Name = styled(Typography.Title)`
 	color: #fff !important;
 	margin: 0 !important;
 	text-align: center;
+`;
+export const HeaderBtn = styled(Button)`
+	height: 58px !important;
+	background-color: transparent;
+	border-color: #73f9cf !important;
+	color: #ffffff;
+
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+
+	font-size: 24px !important;
+
+	&:hover {
+		background-color: #73f9cf;
+		color: #222a35 !important;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+	}
+
+	&:active {
+		transform: translateY(2px);
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+	}
 `;

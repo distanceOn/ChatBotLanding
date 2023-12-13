@@ -6,6 +6,7 @@ import sasha from "../../assets/sasha.png";
 
 import * as S from "./style";
 import { Typography } from "antd";
+import { Arrow } from "../Arrow/Arrow";
 
 const members = [
 	{
@@ -72,6 +73,10 @@ export const Team = () => {
 					);
 				})}
 			</S.MembersContainer>
+			<Arrow />
+			<S.HeaderBtn size="large" type="default">
+				Связаться с нами
+			</S.HeaderBtn>
 		</S.Container>
 	);
 };
