@@ -9,18 +9,18 @@ export const Benefits = () => {
 	const items: Item[] = [
 		{
 			icon: "",
-			title: "dsalkdjaskldlkasd",
-			desc: "dasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjk",
+			title: "Скорость и эффективность",
+			desc: "Благодаря мощности нейросетей, Сириус обрабатывает запросы с невероятной быстротой",
 		},
 		{
 			icon: "",
-			title: "dsalkdjaskldlkasd",
-			desc: "dasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjk",
+			title: "Персонализированный подход",
+			desc: "ИИ анализирует ваши прошлые запросы, чтобы сделать будущие взаимодействия ещё более целенаправленными",
 		},
 		{
 			icon: "",
-			title: "dsalkdjaskldlkasd",
-			desc: "dasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjkdasdsamfndsmfkkfnldngjdsfbngjhdfbgjkfsadmlkdfjgnjdsnfjk",
+			title: "Прогрессивное обучение",
+			desc: "С каждым новым запросом Сириус улучшает свои функции, делая информационную поддержку всё более качественной",
 		},
 	];
 	return (

@@ -14,35 +14,40 @@ const members = [
 		name: "Дмитрий",
 		surname: "Диденко",
 		tg: "@Telrielnor",
-		role: "Data scientist",
+		role: "Data Scientist",
+		subrole: "TeamLead",
 	},
 	{
 		photo: igor,
 		name: "Игорь",
 		surname: "Шахматов",
 		tg: "@Igor_Shakhmatov_DS",
-		role: "Data scientist",
+		role: "Data Scientist",
+		subrole: 'Backend Developer'
 	},
 	{
 		photo: snejana,
 		name: "Снежана",
 		surname: "Маркив",
 		tg: "@SnowflakeMoscow",
-		role: "Data scientist",
+		role: "Data Scientist",
+		subrole: 'Lawyer',
 	},
 	{
 		photo: roma,
 		name: "Роман",
 		surname: "Кондрашев",
 		tg: "@distanceOn",
-		role: "Frontend developer",
+		role: "Frontend Developer",
+		subrole: 'Project Manager'
 	},
 	{
 		photo: sasha,
 		name: "Александра",
 		surname: "Попко",
 		tg: "@makogonova",
-		role: "Frontend developer",
+		role: "Frontend Developer",
+		subrole: 'Product Designer'
 	},
 ];
 export const Team = () => {
@@ -50,7 +55,7 @@ export const Team = () => {
 		<S.Container id="team">
 			<S.MailTitle>Наша команда</S.MailTitle>
 			<S.MembersContainer>
-				{members.map(({ photo, name, surname, tg, role }, i) => {
+				{members.map(({ photo, name, surname, tg, role, subrole }, i) => {
 					return (
 						<S.Member key={i}>
 							<S.Photo src={photo} alt="" />
@@ -69,12 +74,13 @@ export const Team = () => {
 							</S.ColumnBox>
 
 							<S.ItalicText>{role}</S.ItalicText>
+							<S.ItalicText>{subrole}</S.ItalicText>
 						</S.Member>
 					);
 				})}
 			</S.MembersContainer>
 			<Arrow />
-			<S.HeaderBtn size="large" type="default">
+			<S.HeaderBtn  target="_blank" href="https://t.me/distanceOn" size="large" type="default">
 				Связаться с нами
 			</S.HeaderBtn>
 		</S.Container>

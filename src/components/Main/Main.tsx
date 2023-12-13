@@ -5,9 +5,9 @@ export const Main = () => {
 		<S.Container id="about">
 			<Col span={2} />
 			<S.TextContainer span={11}>
-				<S.MailTitle>CHATBOT FDSAFDJ DSADAS</S.MailTitle>
-				<S.SubTitle level={2}>
-					sdjksakjdbbdhsbfhjdsadksnkdsksalkdfbhjdsbfhjbjdhbhjgsbhjbashjfbddsjhbfhjdsbfhjasbhdsbfhjdbsfjhbadhsbdhsjbfsdbfjhbsdhfbdshjfbdsfhbdshjbfhdsbfhjksdbfkhadsb
+				<S.MailTitle>Умный цифровой помощник Главы района <S.Name>Сириус</S.Name></S.MailTitle>
+				<S.SubTitle level={3}>
+					Сириус — это революционный шаг в области цифрового взаимодействия между жителями Якутии и администрацией региона. За его основу взята мощная нейросеть, способная к обучению и самосовершенствованию, что позволяет ему не только предоставлять актуальную информацию, но и непрерывно улучшать качество взаимодействия с пользователями.
 				</S.SubTitle>
 			</S.TextContainer>
 			<S.ImgBlock span={11}>
