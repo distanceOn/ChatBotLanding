@@ -1,5 +1,8 @@
+import { Benefits } from "../Benefits/Benefits";
+import { Functions } from "../Functions/Functions";
 import { Header } from "../Header/Header";
 import { Main } from "../Main/Main";
+import { Roadmap } from "../Roadmap/Roadmap";
 import * as S from "./style";
 
 export const App = () => {
@@ -7,6 +10,9 @@ export const App = () => {
 		<S.App>
 			<Header />
 			<Main/>
+			<Benefits/>
+			<Functions/>
+			<Roadmap/>
 		</S.App>
 	);
 };

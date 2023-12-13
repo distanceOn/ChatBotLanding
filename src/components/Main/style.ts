@@ -5,6 +5,8 @@ import Title from "antd/es/typography/Title";
 
 export const Container = styled(Row)`
 padding-top:15vh;
+padding-bottom:15vh;
+
 width: 100vw;
 padding-left: 5vw;
 padding-right: 5vw;

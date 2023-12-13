@@ -13,7 +13,7 @@ export const Header = styled(AHeader)`
 	height: 12vh;
 	background-color: black;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-
+z-index: 1000;
 `
 
 export const Logo = styled.div`
