@@ -1,17 +1,25 @@
 import styled from "styled-components";
-import { Col, Image, Row } from "antd";
+import { Image } from "antd";
 import Title from "antd/es/typography/Title";
 
-export const Container = styled(Row)`
+export const Container = styled.div`
 	padding-top: 15vh;
 	padding-bottom: 15vh;
 
 	width: 100vw;
 	padding-left: 5vw;
 	padding-right: 5vw;
+
+	display: flex;
+
+	@media (max-width: 425px) {
+		flex-wrap: wrap-reverse;
+		gap: 2vh;
+		padding-bottom: 10vh;
+	}
 `;
 
-export const ImgBlock = styled(Col)`
+export const ImgBlock = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -19,9 +27,14 @@ export const ImgBlock = styled(Col)`
 	width: 100%;
 	padding: 2vw;
 	padding-left: 5vw;
+
+	@media (max-width: 425px) {
+		height: 100%;
+		justify-content: center;
+	}
 `;
 
-export const TextContainer = styled(Col)`
+export const TextContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -33,6 +46,15 @@ export const Img = styled(Image)`
 	border-radius: 50%;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
+
+	height: 25vw !important;
+	width: 25vw !important;
+
+	@media (max-width: 425px) {
+		height: 50vw !important;
+		width: 50vw !important;
+		justify-content: center;
+	}
 `;
 
 export const MailTitle = styled(Title)`
@@ -47,6 +69,10 @@ export const MailTitle = styled(Title)`
 export const SubTitle = styled(Title)`
 	color: #fff !important;
 	margin: 0 !important;
+
+	@media (max-width: 425px) {
+		font-size: 1.4rem !important;
+	}
 `;
 
 export const Name = styled.strong`
