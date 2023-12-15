@@ -11,7 +11,7 @@ export const ColumnBox = styled.div`
 	& svg {
 		fill: white;
 	}
-    margin: 0;
+	margin: 0;
 `;
 export const Container = styled(ColumnBox)`
 	gap: 12vh;
@@ -25,6 +25,11 @@ export const MembersContainer = styled.div`
 	justify-content: space-evenly;
 	width: 100%;
 	min-height: 40vh;
+
+	@media (max-width: 425px) {
+		flex-direction: column;
+		gap: 30px;
+	}
 `;
 
 export const Member = styled(ColumnBox)`
@@ -39,12 +44,20 @@ export const Member = styled(ColumnBox)`
 	border-radius: 20px;
 	color: #fff;
 	border: 2px solid #73f9cf;
+
+	@media (max-width: 425px) {
+		width: 60%;
+	}
 `;
 export const MailTitle = styled(Title)`
 	color: #73f9cf !important;
 `;
 export const Photo = styled.img`
 	width: 10vw;
+
+	@media (max-width: 425px) {
+		width: 60%;
+	}
 `;
 export const TgText = styled(Link)`
 	color: #fe095f !important;
