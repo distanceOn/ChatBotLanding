@@ -1,29 +1,50 @@
-import { Col, Divider, Row, Typography } from "antd";
+import { Divider, Typography } from "antd";
 import styled from "styled-components";
 
-export const Container = styled(Row)`
+export const Container = styled.div`
 	padding-top: 15vw;
 	padding-bottom: 15vw;
 	width: 100vw;
 	padding-left: 5vw;
 	padding-right: 5vw;
+
+	display: flex;
+
+	@media (max-width: 425px) {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+	}
 `;
 
-export const TextContainer = styled(Col)`
+export const TextContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 `;
 
-export const VideoContainer = styled(Col)`
+export const VideoContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media (max-width: 425px) {
+		width: 90vw;
+		margin-bottom: 5vh;
+	}
 `;
 
 export const Video = styled.div`
 	border: 1px solid white;
-	width: 100%;
-	height: 60%;
+
+	width: 40vw;
+	height: 40vh;
+
+	@media (max-width: 425px) {
+		width: 80vw;
+		height: 40vh;
+	}
 `;
 
 export const Title = styled(Typography.Title)`
@@ -33,6 +54,7 @@ export const Title = styled(Typography.Title)`
 
 	@media (max-width: 425px) {
 		font-size: 6vw !important;
+		margin-bottom: 20px !important;
 	}
 `;
 
@@ -49,6 +71,11 @@ export const Item = styled.div`
 	display: flex;
 	gap: 2vw;
 	width: 80%;
+
+	@media (max-width: 425px) {
+		width: 100%;
+		margin-top: 1rem !important;
+	}
 `;
 export const ItemIcon = styled.div`
 	width: 3vw;
@@ -64,6 +91,10 @@ export const ItemText = styled.div`
 
 export const Subtitle = styled(Typography.Title)`
 	color: #fff !important;
+
+	@media (max-width: 425px) {
+		font-size: 1.4rem !important;
+	}
 `;
 
 export const Desc = styled(Typography.Paragraph)`
