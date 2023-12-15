@@ -53,7 +53,7 @@ const members = [
 export const Team = () => {
 	return (
 		<S.Container id="team">
-			<S.MailTitle>Наша команда</S.MailTitle>
+			<S.Title>НАША КОМАНДА</S.Title>
 			<S.MembersContainer>
 				{members.map(({ photo, name, surname, tg, role, subrole }, i) => {
 					return (

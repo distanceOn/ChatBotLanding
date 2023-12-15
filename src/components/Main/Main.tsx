@@ -1,11 +1,9 @@
-import { Col } from "antd";
 import * as S from "./style.ts";
 import character from "../../assets/character.webp";
 export const Main = () => {
 	return (
 		<S.Container id="about">
-			<Col span={2} />
-			<S.TextContainer span={11}>
+			<S.TextContainer>
 				<S.MailTitle>
 					Умный цифровой помощник Главы района <S.Name>Сириус</S.Name>
 				</S.MailTitle>
@@ -18,13 +16,8 @@ export const Main = () => {
 					улучшать качество взаимодействия с пользователями.
 				</S.SubTitle>
 			</S.TextContainer>
-			<S.ImgBlock span={11}>
-				<S.Img
-					preview={false}
-					width={"25vw"}
-					height={"25vw"}
-					src={character}
-				/>
+			<S.ImgBlock>
+				<S.Img preview={false} src={character} />
 			</S.ImgBlock>
 		</S.Container>
 	);

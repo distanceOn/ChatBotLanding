@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title } from "../Benefits/style";
+
 import Link from "antd/es/typography/Link";
 import { Button, Typography } from "antd";
 
@@ -11,7 +11,7 @@ export const ColumnBox = styled.div`
 	& svg {
 		fill: white;
 	}
-    margin: 0;
+	margin: 0;
 `;
 export const Container = styled(ColumnBox)`
 	gap: 12vh;
@@ -25,26 +25,45 @@ export const MembersContainer = styled.div`
 	justify-content: space-evenly;
 	width: 100%;
 	min-height: 40vh;
+
+	@media (max-width: 425px) {
+		flex-direction: column;
+		gap: 30px;
+	}
 `;
 
 export const Member = styled(ColumnBox)`
 	width: 16vw;
 	padding: 24px;
-	height: 100%;
 
 	gap: 10px;
+
 	background-color: transparent;
 	box-shadow: 0px 0px 33px 0px rgba(115, 249, 207, 0.5),
 		inset 0px 0px 33px 0px rgba(115, 249, 207, 1);
 	border-radius: 20px;
 	color: #fff;
 	border: 2px solid #73f9cf;
+
+	@media (max-width: 425px) {
+		width: 60%;
+	}
 `;
-export const MailTitle = styled(Title)`
+export const Title = styled.h3`
 	color: #73f9cf !important;
+	font-size: 3vw;
+	font-weight: 700;
+
+	@media (max-width: 425px) {
+		font-size: 6vw;
+	}
 `;
 export const Photo = styled.img`
 	width: 10vw;
+
+	@media (max-width: 425px) {
+		width: 60%;
+	}
 `;
 export const TgText = styled(Link)`
 	color: #fe095f !important;
