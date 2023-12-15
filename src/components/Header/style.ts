@@ -14,6 +14,11 @@ export const Header = styled(AHeader)`
 	background-color: black;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	z-index: 1000;
+
+	@media (max-width: 425px) {
+		overflow: auto;
+		width: 100vw;
+	}
 `;
 
 export const Logo = styled.div`
@@ -30,6 +35,9 @@ export const Logo = styled.div`
 	&:active {
 		transform: translateY(2px);
 		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+	}
+	@media (max-width: 425px) {
+		display: none;
 	}
 `;
 
@@ -52,7 +60,6 @@ export const Menu = styled(Anchor)`
 		}
 		&:hover {
 			color: #73f9cf !important; /* Цвет при наведении */
-			
 
 			&::after {
 				border-bottom-color: #73f9cf !important;
@@ -66,6 +73,10 @@ export const Menu = styled(Anchor)`
 		&::after {
 			border-bottom-color: #73f9cf !important;
 		}
+	}
+
+	@media (max-width: 425px) {
+		padding-right: 20px;
 	}
 `;
 
@@ -88,5 +99,9 @@ export const HeaderBtn = styled(Button)`
 	&:active {
 		transform: translateY(2px);
 		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+	}
+
+	@media (max-width: 425px) {
+		width: 200px;
 	}
 `;
