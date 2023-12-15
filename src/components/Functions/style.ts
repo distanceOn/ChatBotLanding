@@ -30,6 +30,10 @@ export const Title = styled(Typography.Title)`
 	color: #73f9cf !important;
 	font-size: 3vw !important;
 	margin: 0 !important;
+
+	@media (max-width: 425px) {
+		font-size: 6vw !important;
+	}
 `;
 
 export const CustomDivider = styled(Divider)`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title } from "../Benefits/style";
+
 import Link from "antd/es/typography/Link";
 import { Button, Typography } from "antd";
 
@@ -35,9 +35,9 @@ export const MembersContainer = styled.div`
 export const Member = styled(ColumnBox)`
 	width: 16vw;
 	padding: 24px;
-	height: 100%;
 
 	gap: 10px;
+
 	background-color: transparent;
 	box-shadow: 0px 0px 33px 0px rgba(115, 249, 207, 0.5),
 		inset 0px 0px 33px 0px rgba(115, 249, 207, 1);
@@ -49,8 +49,14 @@ export const Member = styled(ColumnBox)`
 		width: 60%;
 	}
 `;
-export const MailTitle = styled(Title)`
+export const Title = styled.h3`
 	color: #73f9cf !important;
+	font-size: 3vw;
+	font-weight: 700;
+
+	@media (max-width: 425px) {
+		font-size: 6vw;
+	}
 `;
 export const Photo = styled.img`
 	width: 10vw;
