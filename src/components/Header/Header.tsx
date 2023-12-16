@@ -41,7 +41,7 @@ export const Header = () => {
 				direction="horizontal"
 				items={menuItems}
 			/>
-			<S.HeaderBtn>Запустить</S.HeaderBtn>
+			<S.HeaderBtn target="_blank" href="https://vk.com/sirius_helper">Запустить</S.HeaderBtn>
 		</S.Header>
 	);
 };

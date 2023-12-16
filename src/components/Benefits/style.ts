@@ -29,8 +29,17 @@ export const Item = styled.div`
 export const IconContainer = styled.div`
 	width: 7vw;
 	height: 7vw;
-	background-color: black;
-	border: 1px solid #73f9cf;
+	
+	
+	& span{
+		width: 100%;
+		height: 100%;
+		& svg{
+			width: 100%;
+		height: 100%;
+		fill: #73f9cf;
+		}
+	}
 `;
 
 export const CustomDivider = styled(Divider)`

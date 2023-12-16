@@ -80,7 +80,15 @@ export const Item = styled.div`
 export const ItemIcon = styled.div`
 	width: 3vw;
 	height: 3vw;
-	border: 1px solid #73f9cf;
+	& span {
+		width: 100%;
+		height: 100%;
+		& svg{
+			fill: #73f9cf;
+			width: 100%;
+			height: 100%;
+		}
+	}
 `;
 
 export const ItemText = styled.div`

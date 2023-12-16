@@ -17,6 +17,10 @@ export const Container = styled(ColumnBox)`
 	gap: 12vh;
 
 	margin-bottom: 16vh;
+	@media (max-width: 425px) {
+		
+		gap: 5vh;
+	}
 `;
 
 export const MembersContainer = styled.div`
