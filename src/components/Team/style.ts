@@ -64,6 +64,7 @@ export const Title = styled.h3`
 `;
 export const Photo = styled.img`
 	width: 10vw;
+	border-radius: 50%;
 
 	@media (max-width: 425px) {
 		width: 60%;
