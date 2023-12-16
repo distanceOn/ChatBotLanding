@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Image } from "antd";
+import { Button, Image } from "antd";
 import Title from "antd/es/typography/Title";
 
 export const Container = styled.div`
@@ -15,7 +15,8 @@ export const Container = styled.div`
 	@media (max-width: 425px) {
 		flex-wrap: wrap-reverse;
 		gap: 2vh;
-		padding-bottom: 10vh;
+		padding-bottom: 5vh;
+		justify-content: center;
 	}
 `;
 
@@ -83,4 +84,34 @@ export const Name = styled.strong`
 		linear-gradient(334deg, #2b876c, #2b876c, red, #000000);
 	border-radius: 10px;
 	padding: 1px 15px;
+`;
+
+export const StartBtn = styled(Button)`
+	display: none;
+
+	width: 10vw;
+	height: 45%;
+	background-color: #fe095f;
+	color: #ffffff;
+	border: none;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	margin-top: 5vh;
+
+	&:hover,
+	&:focus {
+		background-color: #73f9cf;
+		color: #222a35;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+	}
+
+	&:active {
+		transform: translateY(2px);
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+	}
+
+	@media (max-width: 425px) {
+		width: 200px;
+		display: block;
+	}
 `;

@@ -1,5 +1,9 @@
 import * as S from "./style";
-import {SearchOutlined, DatabaseOutlined, CustomerServiceOutlined} from '@ant-design/icons';
+import {
+	SearchOutlined,
+	DatabaseOutlined,
+	CustomerServiceOutlined,
+} from "@ant-design/icons";
 
 export const Functions = () => {
 	const items = [
@@ -9,12 +13,12 @@ export const Functions = () => {
 			desc: "Сириус точно интерпретирует ваши вопросы и предоставляет наиболее релевантные ответы",
 		},
 		{
-			icon: () => <DatabaseOutlined/>,
+			icon: () => <DatabaseOutlined />,
 			title: "Обучение на данных",
 			desc: "С каждым запросом Сириус становится умнее, оптимизируя свои ответы и предложения для повышения точности и полезности",
 		},
 		{
-			icon: () => <CustomerServiceOutlined/>,
+			icon: () => <CustomerServiceOutlined />,
 			title: "Комплексная поддержка",
 			desc: "Если система не найдет готовый ответ, она поможет сформировать обращение к сотруднику администрации и обеспечит вас обратной связью",
 		},
@@ -26,7 +30,7 @@ export const Functions = () => {
 				<S.CustomDivider />
 				{items.map((item, key) => (
 					<div key={key}>
-						<S.Item >
+						<S.Item>
 							<S.ItemIcon>{item.icon()}</S.ItemIcon>
 							<S.ItemText>
 								<S.Subtitle>{item.title}</S.Subtitle>
