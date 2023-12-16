@@ -88,15 +88,17 @@ export const Name = styled.strong`
 
 export const StartBtn = styled(Button)`
 	display: none;
+	height: 48px !important;
 
 	width: 10vw;
-	height: 45%;
+
 	background-color: #fe095f;
 	color: #ffffff;
 	border: none;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 	transition: all 0.3s ease;
 	margin-top: 5vh;
+	font-size: 20px !important;
 
 	&:hover,
 	&:focus {

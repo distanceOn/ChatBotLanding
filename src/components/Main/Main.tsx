@@ -3,7 +3,7 @@ import character from "../../assets/character.webp";
 export const Main = () => {
 	return (
 		<S.Container id="about">
-			<S.StartBtn>Запустить</S.StartBtn>
+			<S.StartBtn size="large">Запустить</S.StartBtn>
 
 			<S.TextContainer>
 				<S.MailTitle>
