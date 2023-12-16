@@ -18,6 +18,8 @@ export const Header = styled(AHeader)`
 	@media (max-width: 425px) {
 		overflow: auto;
 		width: 100vw;
+		flex-direction: row-reverse;
+    gap: 4vw;
 	}
 `;
 
@@ -75,9 +77,7 @@ export const Menu = styled(Anchor)`
 		}
 	}
 
-	@media (max-width: 425px) {
-		padding-right: 20px;
-	}
+	
 `;
 
 export const HeaderBtn = styled(Button)`
