@@ -86,6 +86,9 @@ export const HeaderBtn = styled(Button)`
 	border: none;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 	transition: all 0.3s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:hover,
 	&:focus {
