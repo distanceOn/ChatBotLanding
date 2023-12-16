@@ -18,8 +18,8 @@ export const Header = styled(AHeader)`
 	@media (max-width: 425px) {
 		overflow: auto;
 		width: 100vw;
-		flex-direction: row-reverse;
-    gap: 4vw;
+		flex-direction: row;
+		gap: 4vw;
 	}
 `;
 
@@ -76,8 +76,6 @@ export const Menu = styled(Anchor)`
 			border-bottom-color: #73f9cf !important;
 		}
 	}
-
-	
 `;
 
 export const HeaderBtn = styled(Button)`
@@ -103,5 +101,6 @@ export const HeaderBtn = styled(Button)`
 
 	@media (max-width: 425px) {
 		width: 200px;
+		display: none;
 	}
 `;
