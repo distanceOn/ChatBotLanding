@@ -23,9 +23,9 @@ export const Functions = () => {
 			<S.TextContainer>
 				<S.Title level={2}>Функционал</S.Title>
 				<S.CustomDivider />
-				{items.map((item) => (
-					<>
-						<S.Item>
+				{items.map((item, key) => (
+					<div key={key}>
+						<S.Item >
 							<S.ItemIcon />
 							<S.ItemText>
 								<S.Subtitle>{item.title}</S.Subtitle>
@@ -33,7 +33,7 @@ export const Functions = () => {
 							</S.ItemText>
 						</S.Item>
 						<S.CustomDivider />
-					</>
+					</div>
 				))}
 			</S.TextContainer>
 			<S.VideoContainer>

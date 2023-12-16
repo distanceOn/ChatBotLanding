@@ -25,9 +25,9 @@ export const Benefits = () => {
 	];
 	return (
 		<S.Container id="benefits">
-			{items.map((item) => {
+			{items.map((item, key) => {
 				return (
-					<S.Item>
+					<S.Item key={key}>
 						<S.IconContainer></S.IconContainer>
 						<S.CustomDivider />
 						<S.TextContainer>
