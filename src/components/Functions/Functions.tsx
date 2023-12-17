@@ -42,7 +42,10 @@ export const Functions = () => {
 				))}
 			</S.TextContainer>
 			<S.VideoContainer>
-				<S.Video />
+				<S.Photos autoplay>
+									<S.Photo preview={false} src="src/assets/query.jpg" alt="Запрос"/>
+									<S.Photo preview={false} src="src/assets/query2.jpg" alt="Запрос"/>
+    </S.Photos>
 			</S.VideoContainer>
 		</S.Container>
 	);
