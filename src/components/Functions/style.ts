@@ -1,4 +1,4 @@
-import { Divider, Typography } from "antd";
+import { Carousel, Divider, Image, Typography } from "antd";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -35,17 +35,24 @@ export const VideoContainer = styled.div`
 	}
 `;
 
-export const Video = styled.div`
-	border: 1px solid white;
+export const Photos = styled(Carousel)`
 
 	width: 40vw;
-	height: 40vh;
+	height: 33vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@media (max-width: 425px) {
 		width: 80vw;
-		height: 40vh;
+		height: 33vh;
 	}
 `;
+
+export const Photo = styled(Image)`
+	width: 100%;
+	height: 100%;
+`
 
 export const Title = styled(Typography.Title)`
 	color: #73f9cf !important;
