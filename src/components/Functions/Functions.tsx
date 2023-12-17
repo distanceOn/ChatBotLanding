@@ -4,6 +4,9 @@ import {
 	DatabaseOutlined,
 	CustomerServiceOutlined,
 } from "@ant-design/icons";
+import Query1 from '../../assets/query.jpg'
+import Query2 from '../../assets/query2.jpg'
+
 
 export const Functions = () => {
 	const items = [
@@ -43,8 +46,8 @@ export const Functions = () => {
 			</S.TextContainer>
 			<S.VideoContainer>
 				<S.Photos autoplay>
-									<S.Photo preview={false} src="/src/assets/query.jpg" alt="Запрос"/>
-									<S.Photo preview={false} src="/src/assets/query2.jpg" alt="Запрос"/>
+									<S.Photo preview={false} src={Query1} alt="Запрос"/>
+									<S.Photo preview={false} src={Query2} alt="Запрос"/>
     </S.Photos>
 			</S.VideoContainer>
 		</S.Container>
